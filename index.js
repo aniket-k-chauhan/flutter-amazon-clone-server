@@ -10,7 +10,7 @@ const productRouter = require("./routes/product");
 const userRouter = require("./routes/user");
 
 // INIT
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const USER = process.env.MONGODB_USER;
 const PASSWORD = process.env.MONGODB_PASSWORD;
 const app = express();
